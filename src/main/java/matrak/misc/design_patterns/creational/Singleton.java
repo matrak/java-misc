@@ -1,4 +1,4 @@
-package matrak.misc.design_patterns;
+package matrak.misc.design_patterns.creational;
 
 import static matrak.misc.Util.log;
 
@@ -30,7 +30,7 @@ public class Singleton {
 		}
 		
 		/**
-		 * can be performance problem for older jvm-s (factor 100)
+		 * can be a performance problem for older jvm-s (factor 100)
 		 */
 		public synchronized static SimpleSingleton getSync() {
 			return get();
